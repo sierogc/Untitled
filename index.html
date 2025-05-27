@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Untitled</title>
   <style>
     body {
@@ -17,7 +17,12 @@
     .profile {
       text-align: center;
     }
-
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+	  
     .ascii {
       position: relative;
       display: inline-block;
@@ -124,7 +129,20 @@
       95% { clip: rect(55px, 9999px, 140px, 0); }
       100% { clip: rect(110px, 9999px, 190px, 0); }
     }
-
+@media (max-width: 768px) {
+  .menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
+	  img {
+  max-width: 100%;
+  height: auto;
+}
     @keyframes glitch-animation-2 {
       0% { clip: rect(5px, 9999px, 80px, 0); }
       5% { clip: rect(20px, 9999px, 100px, 0); }
